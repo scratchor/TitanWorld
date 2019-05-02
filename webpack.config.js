@@ -1,7 +1,7 @@
 /* eslint-disable */
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ExtractTextPlugin = require ('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require('path');
 
 module.exports = {
@@ -10,7 +10,7 @@ module.exports = {
   devServer: {
     inline: true,
     port: 3000,
-    //open: 'Firefox',
+    open: 'Firefox',
     contentBase: './',
     watchContentBase: true,
     historyApiFallback: true
@@ -30,25 +30,29 @@ module.exports = {
           }
         ]
       },
-      {
+/*      {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
           fallback: "style-loader",
           use: "css-loader"
         })
-      },
+      },*/
       {
         test: /\.scss$/, use: ['style-loader', 'css-loader', 'resolve-url-loader', 'postcss-loader', 'sass-loader']
       },
-      // {
-      //   test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
-      //   use: [
-      //     {
-      //       loader: 'file-loader',
-      //       options: {},
-      //     },
-      //   ],
-      // },
+/*      {
+         test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+      use: [
+          {
+          loader: 'file-loader',
+            options: {},
+           },
+         ],
+      },*/
+      {
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader"]
+      },
       {
         test: /\.(png|woff|woff2|eot|ttf|svg|jpg)$/, loader: 'url-loader?limit=100000'
       },
@@ -63,14 +67,15 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: "./public/main.html",
-      filename: "./main.html"
+      inject: true,
+      template: "./public/index.html",
+      filename: "./index.html"
     }),
-    // new MiniCssExtractPlugin({
-    //   filename: "[nameTime].css",
-    //   chunkFilename: "[id].css"
-    // }),
-    new ExtractTextPlugin("styles.css"),
+     new MiniCssExtractPlugin({
+       filename: "[nameTime].css",
+       chunkFilename: "[id].css"
+    }),
+    //new ExtractTextPlugin("styles.css"),
   ],
 };
 
