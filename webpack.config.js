@@ -30,25 +30,25 @@ module.exports = {
           }
         ]
       },
-/*      {
-        test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: "css-loader"
-        })
-      },*/
+      // {
+      //   test: /\.css$/,
+      //   use: ExtractTextPlugin.extract({
+      //     fallback: "style-loader",
+      //     use: "css-loader"
+      //   })
+      // },
       {
         test: /\.scss$/, use: ['style-loader', 'css-loader', 'resolve-url-loader', 'postcss-loader', 'sass-loader']
       },
-/*      {
-         test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+      {
+        test: /\.(ttf|eot|svg|gif|png)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
       use: [
           {
           loader: 'file-loader',
             options: {},
            },
          ],
-      },*/
+      },
       {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, "css-loader"]
@@ -67,7 +67,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      inject: true,
+      //inject: true,
       template: "./public/index.html",
       filename: "./index.html"
     }),

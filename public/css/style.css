@@ -54,11 +54,6 @@ Home
   color: #fff;
 }
 
-.home-container {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
 .logo {
   display: inline-block;
   margin-bottom: 40px;
@@ -124,7 +119,6 @@ Home
 
 .slider-wrapp {
   background: #fff;
-  padding: 10px;
   border-radius: 5px;
 }
 
