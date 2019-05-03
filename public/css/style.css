@@ -60,7 +60,7 @@ Home
 }
 
 .brand_logo {
-  height: 45px;
+  height: 40px;
   margin-left: 5px;
   margin-top: 7px;
 }
@@ -173,7 +173,7 @@ header {
 Contain
 =========================== */
 .contain {
-  padding: 100px 0 80px 0;
+  padding: 50px 0 80px 0;
 }
 
 .dark-bg {
@@ -215,6 +215,7 @@ Gallery
   margin-bottom: 30px;
   cursor: pointer;
   text-align: center;
+  height: 100%;
 }
 
 .image-caption {
@@ -864,7 +865,7 @@ Heading
   background-repeat: no-repeat;
   padding-bottom: 20px;
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .dark-bg .heading,
@@ -930,6 +931,7 @@ Flat icons
   text-indent: -9999px;
   background-image: url(../img/icons.png);
   background-repeat: no-repeat;
+  margin-bottom: 20px;
 }
 
 .icons.icon-imac {
@@ -983,7 +985,7 @@ Flat icons
 .icon-center {
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .icon-left {
@@ -1273,7 +1275,7 @@ Custom responsive
     left: -100%;
   }
   #introduce .col-md-4.margintop20 {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
   .testimoni {
     margin-top: 60px;
@@ -1330,7 +1332,7 @@ Custom responsive
     color: #fff;
   }
   #introduce .col-md-4.margintop20 {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
   .testimoni {
     font-size: 24px;
