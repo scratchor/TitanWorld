@@ -1,7 +1,7 @@
 (function($) {
-	'use strict';
-      $('.flexslider').flexslider({
+    'use strict';
+    $('.flexslider').flexslider({
         animation: "slide",
-		slideshow: true, 
-      });
+        slideshow: true,
+    });
 })(jQuery);

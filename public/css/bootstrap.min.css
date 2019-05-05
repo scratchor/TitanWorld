@@ -935,7 +935,7 @@ img {
 .carousel-inner > .item > a > img {
   display: block;
   width: 100% \9;
-  max-width: 102%;
+  max-width: 100%;
   height: auto;
 }
 .img-rounded {
@@ -5720,7 +5720,7 @@ button.close {
 }
 .modal-dialog {
   position: relative;
-  width: auto;
+  width: 100%;
   margin: 10px;
 }
 .modal-content {
@@ -5734,6 +5734,7 @@ button.close {
   outline: 0;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  height: 100vh;
 }
 .modal-backdrop {
   position: fixed;

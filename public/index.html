@@ -10,6 +10,14 @@
 
     <title>Increate - Onepage and multipurpose landingpage template</title>
 
+    <!-- fontawesome-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
 
@@ -85,15 +93,14 @@
             <ul class="nav navbar-nav">
               <li><a href="#introduce">Services</a></li>
               <li><a href="#gallery">Portfolio</a></li>
-              <li><a href="#pricing">Our team</a></li>
-              <li><a href="#team">Contact us</a></li>
-              <li><a href="#contact">Open Source</a></li>
+              <li><a href="#team">Our team</a></li>
+              <li><a href="#contact">Contact us</a></li>
+              <li><a href="#">Open Source</a></li>
             </ul>
           </div>
         </div>
       </div>
     </header>
-
     <!-- End header -->
 
     <!-- Start home -->
@@ -105,13 +112,25 @@
               <div class="flexslider">
                 <ul class="slides">
                   <li>
-                    <img src="img/slider1.jpg" class="img-responsive" alt="" />
+                    <img
+                      src="img/slider1.jpg"
+                      class="img-responsive img_home_slider"
+                      alt=""
+                    />
                   </li>
                   <li>
-                    <img src="img/slider2.jpg" class="img-responsive" alt="" />
+                    <img
+                      src="img/slider2.jpg"
+                      class="img-responsive img_home_slider"
+                      alt=""
+                    />
                   </li>
                   <li>
-                    <img src="img/slider3.jpg" class="img-responsive" alt="" />
+                    <img
+                      src="img/slider33.jpg"
+                      class="img-responsive img_home_slider"
+                      alt=""
+                    />
                   </li>
                 </ul>
               </div>
@@ -129,7 +148,6 @@
           <div class="col-md-4 col-md-offset-4">
             <div class="heading centered">
               <h3>Our Services</h3>
-              <span class="heding-style"></span>
             </div>
           </div>
         </div>
@@ -218,7 +236,10 @@
               <div class="col-md-3 col-xs-6 portfolio_outer">
                 <div class="portfolio-wrapp">
                   <div class="image-caption">
-                    <a href="./portfolio-detail.html" class="image-link"
+                    <a
+                      data-toggle="modal"
+                      data-target="#myModal1"
+                      class="image-link"
                       ><span class="icon-link"></span
                     ></a>
                     <div class="image-title">
@@ -240,7 +261,10 @@
                 <div class="col-md col-xs-12  portfolio_inner">
                   <div class="portfolio-wrapp">
                     <div class="image-caption">
-                      <a href="./portfolio-detail.html" class="image-link"
+                      <a
+                        data-toggle="modal"
+                        data-target="#myModal2"
+                        class="image-link"
                         ><span class="icon-link"></span
                       ></a>
                       <div class="image-title">
@@ -261,7 +285,10 @@
                 <div class="col-md col-xs-12 portfolio_inner">
                   <div class="portfolio-wrapp">
                     <div class="image-caption">
-                      <a href="./portfolio-detail.html" class="image-link"
+                      <a
+                        data-toggle="modal"
+                        data-target="#myModal3"
+                        class="image-link"
                         ><span class="icon-link"></span
                       ></a>
                       <div class="image-title">
@@ -283,7 +310,10 @@
               <div class="col-md-3 col-xs-6 portfolio_outer">
                 <div class="portfolio-wrapp">
                   <div class="image-caption">
-                    <a href="./portfolio-detail.html" class="image-link"
+                    <a
+                      data-toggle="modal"
+                      data-target="#myModal4"
+                      class="image-link"
                       ><span class="icon-link"></span
                     ></a>
                     <div class="image-title">
@@ -301,11 +331,191 @@
                   />
                 </div>
               </div>
+              <!-- End portfolio -->
             </div>
-            <!-- End portfolio -->
           </div>
         </div>
       </div>
+
+      <!--Start Modal 1-->
+      <div
+        class="modal fade"
+        id="myModal1"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="myModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+              <h4 class="modal-title" id="myModalLabel1">модаль 1</h4>
+            </div>
+            <div class="modal-body">
+              <div class="flexslider">
+                <ul class="slides">
+                  <li>
+                    <img
+                      src="img/slider1.jpg"
+                      class="img-responsive img_home_slider"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="img/slider2.jpg"
+                      class="img-responsive img_home_slider"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="img/slider33.jpg"
+                      class="img-responsive img_home_slider"
+                      alt=""
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End Modal 1-->
+
+      <!--Start Modal 2-->
+      <div
+        class="modal fade"
+        id="myModal2"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="myModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+              <h4 class="modal-title" id="myModalLabel2">модаль 2</h4>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-default"
+                data-dismiss="modal"
+              >
+                Закрыть
+              </button>
+              <button type="button" class="btn btn-primary">
+                Сохранить изменения
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End Modal 2-->
+
+      <!--Start Modal 3-->
+      <div
+        class="modal fade"
+        id="myModal3"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="myModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+              <h4 class="modal-title" id="myModalLabel3">модаль 3</h4>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-default"
+                data-dismiss="modal"
+              >
+                Закрыть
+              </button>
+              <button type="button" class="btn btn-primary">
+                Сохранить изменения
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End Modal 3-->
+
+      <!--Start Modal 4-->
+      <div
+        class="modal fade"
+        id="myModal4"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="myModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+              <h4 class="modal-title" id="myModalLabel4">модаль 4</h4>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-default"
+                data-dismiss="modal"
+              >
+                Закрыть
+              </button>
+              <button type="button" class="btn btn-primary">
+                Сохранить изменения
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End Modal 4-->
     </section>
     <!-- End gallery -->
 
@@ -313,221 +523,136 @@
     <section id="client" class="color-bg contain">
       <div class="container">
         <div class="row wow fadeInDown" data-wow-delay="0.4s">
-          <div class="col-md-12">
+          <div class="col-md-4 col-md-offset-4">
+            <div
+              class="heading centered"
+              style="background-size: 190px; margin-bottom: 79px;"
+            >
+              <h3>Technologies</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row wow fadeInDown" data-wow-delay="0.4s">
+          <div class="col-lg-12">
             <ul class="client-list tooltips">
               <li>
-                <ul>
+                <ul style="padding: 0">
                   <li>
-                    <a
-                      href="#"
-                      class="client-link"
-                      data-toggle="tooltip"
-                      data-placement="top"
-                      title="Client name"
-                    >
+                    <div class="img-wrapper">
                       <img
-                        src="img/client/logo1.png"
-                        class="client-logo"
+                        src="img/Ctechnilogies.png"
+                        class="img-client"
                         alt=""
                       />
-                    </a>
+                    </div>
                   </li>
                   <li>
-                    <a
-                      href="#"
-                      class="client-link"
-                      data-toggle="tooltip"
-                      data-placement="top"
-                      title="Client name"
-                    >
+                    <div class="img-wrapper client_logo_second">
                       <img
-                        src="img/client/logo2.png"
-                        class="client-logo"
+                        src="img/technologies-unity.png"
+                        class="img-client"
                         alt=""
                       />
-                    </a>
+                    </div>
                   </li>
                   <li>
-                    <a
-                      href="#"
-                      class="client-link"
-                      data-toggle="tooltip"
-                      data-placement="top"
-                      title="Client name"
-                    >
+                    <div class="img-wrapper client_logo_third">
                       <img
-                        src="img/client/logo3.png"
-                        class="client-logo"
+                        src="img/technologies-photon.png"
+                        class="img-client"
                         alt=""
                       />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="client-link"
-                      data-toggle="tooltip"
-                      data-placement="top"
-                      title="Client name"
-                    >
-                      <img
-                        src="img/client/logo4.png"
-                        class="client-logo"
-                        alt=""
-                      />
-                    </a>
+                    </div>
                   </li>
                   <li class="last">
-                    <a
-                      href="#"
-                      class="client-link"
-                      data-toggle="tooltip"
-                      data-placement="top"
-                      title="Client name"
-                    >
+                    <div class="img-wrapper client_logo_last">
                       <img
-                        src="img/client/logo5.png"
-                        class="client-logo"
+                        src="img/technologies-gamesparks2.png"
+                        class="img-client"
                         alt=""
                       />
-                    </a>
+                    </div>
                   </li>
                 </ul>
               </li>
               <li class="bottom-list">
-                <ul>
+                <ul style="padding: 0">
                   <li>
-                    <a
-                      href="#"
-                      class="client-link"
-                      data-toggle="tooltip"
-                      data-placement="top"
-                      title="Client name"
-                    >
+                    <div class="img-wrapper">
                       <img
-                        src="img/client/logo6.png"
-                        class="client-logo"
+                        src="img/technologies-HTML5.png"
+                        class="img-client"
                         alt=""
                       />
-                    </a>
+                    </div>
                   </li>
                   <li>
-                    <a
-                      href="#"
-                      class="client-link"
-                      data-toggle="tooltip"
-                      data-placement="top"
-                      title="Client name"
-                    >
+                    <div class="img-wrapper client_logo_second">
                       <img
-                        src="img/client/logo7.png"
-                        class="client-logo"
+                        src="img/technologies-firebase.png"
+                        class="img-client"
                         alt=""
                       />
-                    </a>
+                    </div>
                   </li>
                   <li>
-                    <a
-                      href="#"
-                      class="client-link"
-                      data-toggle="tooltip"
-                      data-placement="top"
-                      title="Client name"
-                    >
+                    <div class="img-wrapper client_logo_third">
                       <img
-                        src="img/client/logo8.png"
-                        class="client-logo"
+                        src="img/technologies-playcanvas3.png"
+                        class="img-client"
                         alt=""
                       />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="client-link"
-                      data-toggle="tooltip"
-                      data-placement="top"
-                      title="Client name"
-                    >
-                      <img
-                        src="img/client/logo9.png"
-                        class="client-logo"
-                        alt=""
-                      />
-                    </a>
+                    </div>
                   </li>
                   <li class="last">
-                    <a
-                      href="#"
-                      class="client-link"
-                      data-toggle="tooltip"
-                      data-placement="top"
-                      title="Client name"
-                    >
+                    <div class="img-wrapper client_logo_last">
                       <img
-                        src="img/client/logo10.png"
-                        class="client-logo"
+                        src="img/technologies-playfab2.png"
+                        class="img-client"
                         alt=""
                       />
-                    </a>
+                    </div>
                   </li>
                 </ul>
               </li>
             </ul>
+          </div>
+        </div>
+        <div class="row wow fadeInDown" data-wow-delay="0.4s">
+          <div class="col-md-6 col-md-offset-3">
+            <div class="fab_wrapper">
+              <i class="fab fa-windows fa-5x"></i>
+              <i class="fab fa-apple fa-5x"></i>
+              <i class="fab fa-android fa-5x"></i>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- End client -->
 
-    <!-- Start testimoni -->
-    <div id="testimoni" class="parallax">
-      <div class="container">
-        <div class="row wow fadeInDown" data-wow-delay="0.4s">
-          <div class="col-md-12">
-            <ul class="ticker">
-              <li>
-                <div class="testimoni">
-                  <a href="#" class="testimoni-avatar"
-                    ><img src="img/testimoni/avatar1.png" alt=""
-                  /></a>
-                  <p>
-                    Modo omittantur in pro, has ei reque eloquentiam. Vel cu
-                    iudico populo rationibus eam te delicata imperdiet.
-                  </p>
-                  <span>John doe - Doer corp</span>
-                </div>
-              </li>
-              <li>
-                <div class="testimoni">
-                  <a href="#" class="testimoni-avatar"
-                    ><img src="img/testimoni/avatar2.png" alt=""
-                  /></a>
-                  <p>
-                    Brute intellegebat eos eu, te erat viderer necessitatibus
-                    sea. Omnis commodo consequat ei mea movet praesent.
-                  </p>
-                  <span>Daren maker - Desimaili corp</span>
-                </div>
-              </li>
-              <li>
-                <div class="testimoni">
-                  <a href="#" class="testimoni-avatar"
-                    ><img src="img/testimoni/avatar3.png" alt=""
-                  /></a>
-                  <p>
-                    Soleat interesset mea cu, eum regione menandri definitionem
-                    no, ei pro verear omittantur reprehendunt.
-                  </p>
-                  <span>Joel noah - MartimX corp</span>
-                </div>
-              </li>
-            </ul>
+    <!-- Start testimoni in css/team in html -->
+    <div id="team" class="parallax">
+      <div class="container team-foto">
+        <div class="row wow fadeInDown" data-wow-delay="0.5s">
+          <div class="centered">
+            <h3 style="color:white;">Our Gaming Team</h3>
+          </div>
+          <div class="col-md-12 our_team_first_wrapper">
+            <h5 style="color: white; margin-bottom: 50px;">
+              Consist of 3+ years experienced developers and 6+ years
+              experienced Tech Leads,who implement only the best solutions. Hire
+              a solo developer or a whole team by interviewing candidates and
+              you'll get the desired result.
+            </h5>
+            <div class="col-md-12 our-team-div">
+              <img src="img/Our%20Team.jpg" alt="" class="img-responsive" />
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- End testimoni -->
+    <!-- End testimoni in css/team in html -->
 
     <!-- Start pricing -->
     <section id="pricing" class="contain">
@@ -535,118 +660,91 @@
         <div class="row wow fadeInDown" data-wow-delay="0.4s">
           <div class="col-md-4 col-md-offset-4">
             <div class="heading centered">
-              <h3>See our <span>project plan</span></h3>
+              <h3>How we work</h3>
               <span class="heding-style"></span>
             </div>
           </div>
         </div>
-        <div
-          class="row text-center marginbot20 wow fadeInUp"
-          data-wow-delay="0.4s"
-        >
-          <div class="col-md-8 col-md-offset-2">
-            <h5>
-              Argumentum in nec errem imperdiet abhorreant ei. Id lorem quando
-              legere eos ea nam.
-            </h5>
-            <p>
-              Eam facer elaboraret ea, ad eos nullam consulatu maiestatis. Eum
-              mazim simul ne, dicta mnesarchum duo no, ex nec graece verear.
-              Quodsi mentitum iudicabit ut vel, nam suscipiantur definitionem
-              delicatissimi in.
-            </p>
-          </div>
-        </div>
         <div class="row">
-          <div class="col-md-3 wow flipInY" data-wow-delay="0.6s">
+          <div class="col-md-4 wow flipInY" data-wow-delay="0.6s">
             <div class="pricing-box">
               <div class="pricing-head">
-                <h4>Basic</h4>
-                <div class="price"><span>$15 /</span><em>mon</em></div>
+                <h4>Fair Payment</h4>
               </div>
               <ul>
-                <li><strong>Free</strong> update</li>
-                <li><strong>Unlimited</strong> color</li>
-                <li><strong>PSD file</strong> included</li>
-                <li><strong>1 month</strong> done</li>
-                <li><strong>3 month</strong> maintenance</li>
-                <li><strong>Free</strong> icons</li>
-                <li><strong>Documentation</strong> included</li>
+                <li>Pay for only <strong>actual </strong>working time</li>
+                <li>Min <strong>80 hours</strong></li>
               </ul>
-              <div class="pricing-bottom">
-                <a href="#" class="btn btn-default btn-bavel btn-lg btn-block"
-                  >Select this</a
-                >
-              </div>
             </div>
           </div>
 
-          <div class="col-md-3 wow flipInY" data-wow-delay="0.8s">
+          <div class="col-md-4 wow flipInY" data-wow-delay="0.6s">
             <div class="pricing-box">
               <div class="pricing-head">
-                <h4>Team</h4>
-                <div class="price"><span>$25 /</span><em>mon</em></div>
+                <h4>Time Tracking</h4>
               </div>
               <ul>
-                <li><strong>Free</strong> update</li>
-                <li><strong>Unlimited</strong> color</li>
-                <li><strong>PSD file</strong> included</li>
-                <li><strong>1 month</strong> done</li>
-                <li><strong>6 month</strong> maintenance</li>
-                <li><strong>Free</strong> icons</li>
-                <li><strong>Documentation</strong> included</li>
+                <li>
+                  Get <strong>clear transparency </strong> on what your team
+                  does with their time
+                </li>
               </ul>
-              <div class="pricing-bottom">
-                <a href="#" class="btn btn-default btn-bavel btn-lg btn-block"
-                  >Select this</a
-                >
-              </div>
             </div>
           </div>
 
-          <div class="col-md-3 wow flipInY" data-wow-delay="1s">
-            <div class="pricing-box featured">
+          <div class="col-md-4 wow flipInY" data-wow-delay="0.6s">
+            <div class="pricing-box">
               <div class="pricing-head">
-                <h4>Proffesional</h4>
-                <div class="price"><span>$40 /</span><em>mon</em></div>
+                <h4>Task Management</h4>
               </div>
               <ul>
-                <li><strong>Free</strong> update</li>
-                <li><strong>Unlimited</strong> color</li>
-                <li><strong>PSD file</strong> included</li>
-                <li><strong>1 month</strong> done</li>
-                <li><strong>1 year</strong> maintenance</li>
-                <li><strong>Free</strong> icons</li>
-                <li><strong>Documentation</strong> included</li>
+                <li>
+                  Get instant visibility into all of your team's work with the
+                  help of <strong>Jira, Trello, Asana</strong>
+                </li>
               </ul>
-              <div class="pricing-bottom">
-                <a href="#" class="btn btn-default btn-bavel btn-lg btn-block"
-                  >Select this</a
-                >
-              </div>
             </div>
           </div>
 
-          <div class="col-md-3 wow flipInY" data-wow-delay="1.2s">
+          <div class="col-md-4 wow flipInY" data-wow-delay="0.6s">
             <div class="pricing-box">
               <div class="pricing-head">
-                <h4>Buseness</h4>
-                <div class="price"><span>$75 /</span><em>mon</em></div>
+                <h4>Access to the Code</h4>
               </div>
               <ul>
-                <li><strong>Free</strong> update</li>
-                <li><strong>Unlimited</strong> color</li>
-                <li><strong>PSD file</strong> included</li>
-                <li><strong>1 month</strong> done</li>
-                <li><strong>5 year</strong> maintenance</li>
-                <li><strong>Free</strong> icons</li>
-                <li><strong>Documentation</strong> included</li>
+                <li>
+                  Enjoy the constant access to the
+                  <strong>code and all the sources </strong>located on our
+                  servers
+                  <br />
+                </li>
               </ul>
-              <div class="pricing-bottom">
-                <a href="#" class="btn btn-default btn-bavel btn-lg btn-block"
-                  >Select this</a
-                >
+            </div>
+          </div>
+
+          <div class="col-md-4 wow flipInY" data-wow-delay="0.6s">
+            <div class="pricing-box">
+              <div class="pricing-head">
+                <h4>Understanding Deadlines</h4>
               </div>
+              <ul>
+                <li>
+                  Get the opportunity to the expand or reduce the
+                  <strong>number of employees </strong>depending on your needs
+                  <br />
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow flipInY" data-wow-delay="0.6s">
+            <div class="pricing-box">
+              <div class="pricing-head">
+                <h4>Always in Touch</h4>
+              </div>
+              <ul>
+                <li>Get a <strong>response</strong> in 20 minutes</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -654,139 +752,10 @@
     </section>
     <!-- End pricing -->
 
-    <!-- Start team -->
-    <section id="team" class="color-bg contain paddingbot-clear">
-      <div class="container">
-        <div class="row wow fadeInDown" data-wow-delay="0.4s">
-          <div class="col-md-8 col-md-offset-2">
-            <div class="heading centered">
-              <h3>People behind <span>increate</span></h3>
-              <span class="heding-style"></span>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="list_carousel responsive">
-              <a id="prev4" class="prev" href="#"
-                ><span class="icon-arrow-left"></span
-              ></a>
-              <a id="next4" class="next" href="#"
-                ><span class="icon-arrow-right"></span
-              ></a>
-              <div class="clearfix"></div>
-              <ul id="foo4">
-                <li>
-                  <div class="team-wrapper">
-                    <div class="team-detail">
-                      <h5>Jhonatan <span>done</span></h5>
-                      <p>Founder</p>
-                    </div>
-                    <img
-                      src="img/team/team1.png"
-                      class="img-responsive"
-                      alt=""
-                    />
-                  </div>
-                </li>
-                <li>
-                  <div class="team-wrapper">
-                    <div class="team-detail">
-                      <h5>Anna <span>whilebord</span></h5>
-                      <p>Cofounder</p>
-                    </div>
-                    <img
-                      src="img/team/team2.png"
-                      class="img-responsive"
-                      alt=""
-                    />
-                  </div>
-                </li>
-                <li>
-                  <div class="team-wrapper">
-                    <div class="team-detail">
-                      <h5>Alex <span>root</span></h5>
-                      <p>Web designer</p>
-                    </div>
-                    <img
-                      src="img/team/team3.png"
-                      class="img-responsive"
-                      alt=""
-                    />
-                  </div>
-                </li>
-                <li>
-                  <div class="team-wrapper">
-                    <div class="team-detail">
-                      <h5>Annisa <span>mints</span></h5>
-                      <p>App engineer</p>
-                    </div>
-                    <img
-                      src="img/team/team4.png"
-                      class="img-responsive"
-                      alt=""
-                    />
-                  </div>
-                </li>
-                <li>
-                  <div class="team-wrapper">
-                    <div class="team-detail">
-                      <h5>George <span>willmore</span></h5>
-                      <p>Web progremer</p>
-                    </div>
-                    <img
-                      src="img/team/team5.png"
-                      class="img-responsive"
-                      alt=""
-                    />
-                  </div>
-                </li>
-                <li>
-                  <div class="team-wrapper">
-                    <div class="team-detail">
-                      <h5>Marrio <span>Slovlansky</span></h5>
-                      <p>Web progremer</p>
-                    </div>
-                    <img
-                      src="img/team/team6.png"
-                      class="img-responsive"
-                      alt=""
-                    />
-                  </div>
-                </li>
-                <li>
-                  <div class="team-wrapper">
-                    <div class="team-detail">
-                      <h5>Linna <span>luna</span></h5>
-                      <p>Marketing</p>
-                    </div>
-                    <img
-                      src="img/team/team7.png"
-                      class="img-responsive"
-                      alt=""
-                    />
-                  </div>
-                </li>
-                <li>
-                  <div class="team-wrapper">
-                    <div class="team-detail">
-                      <h5>Dindee <span>dee</span></h5>
-                      <p>Marketing</p>
-                    </div>
-                    <img
-                      src="img/team/team8.png"
-                      class="img-responsive"
-                      alt=""
-                    />
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End team -->
+    <section
+      class="color-bg contain paddingbot-clear"
+      style="padding: 5px 0"
+    ></section>
 
     <!-- Start contact -->
     <section id="contact" class="contain">
@@ -796,14 +765,9 @@
           data-wow-delay="0.4s"
         >
           <div class="col-md-6 col-md-offset-3">
-            <div class="heading centered">
-              <h3>Get in touch <span>with us</span></h3>
-              <span class="heding-style"></span>
+            <div>
+              <h3>Let's talk Games!</h3>
             </div>
-            <h5>
-              If you have a need for a freelance web designer to help you with
-              your web project please get in touch.
-            </h5>
           </div>
         </div>
         <div class="row wow fadeInUp" data-wow-delay="0.4s">
@@ -879,12 +843,16 @@
       <div class="container">
         <div class="row text-center">
           <div
-            class="col-md-6 col-md-offset-3 wow fadeInDown"
+            class="col-md-10 col-md-offset-1 wow fadeInDown"
             data-wow-delay="0.4s"
           >
-            <div class="heading centered">
-              <h3>Stay update <span>with us</span></h3>
-              <span class="heding-style"></span>
+            <div>
+              <h3>Download Our Open Source Social Login Framework</h3>
+              <p>
+                A module codebase, that helps you organize and realise different
+                type of login (Facebook, GoogleSignin, Mail) to backend services
+                (Firebase, PlayFab)
+              </p>
             </div>
           </div>
           <div
@@ -911,24 +879,11 @@
 
     <!-- Start footer -->
     <footer>
-      <div class="social-network">
-        <a href="#" class="social-link"
-          ><span class="icon-social-facebook"></span
-        ></a>
-        <a href="#" class="social-link"
-          ><span class="icon-social-twitter"></span
-        ></a>
-        <a href="#" class="social-link"
-          ><span class="icon-social-dribbble"></span
-        ></a>
-        <a href="#" class="social-link"
-          ><span class="icon-social-tumblr"></span
-        ></a>
-      </div>
       <p class="copyright">
-        2014 &copy; Copyright <a href="#">nce18cex.</a> All rights Reserved.
+        2004-2019 &copy; Copyright Games Lab by VironIT. All rights Reserved.
       </p>
     </footer>
+
     <!-- End footer -->
     <!-- Bootstrap core JavaScript
 ================================================== -->
@@ -970,5 +925,12 @@
 
     <!-- Custom JavaScript -->
     <script src="js/custom.js"></script>
+    <script>
+      $("#myModal1").on("shown.bs.modal", function(e) {
+        console.log("куку");
+        $(".flexslider").flexslider();
+        $(window).trigger("resize");
+      });
+    </script>
   </body>
 </html>
