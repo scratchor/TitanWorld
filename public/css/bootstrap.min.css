@@ -3175,9 +3175,9 @@ input[type="button"].btn-block {
 }
 .fade {
   opacity: 0;
-  -webkit-transition: opacity 0.15s linear;
-  -o-transition: opacity 0.15s linear;
-  transition: opacity 0.15s linear;
+  -webkit-transition: opacity 0.65s linear;
+  -o-transition: opacity 0.65s linear;
+  transition: opacity 0.65s linear;
 }
 .fade.in {
   opacity: 1;
@@ -5702,9 +5702,9 @@ button.close {
   outline: 0;
 }
 .modal.fade .modal-dialog {
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  -o-transition: -o-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
+  -webkit-transition: -webkit-transform 0.8s ease-out;
+  -o-transition: -o-transform 0.8s ease-out;
+  transition: transform 0.8s ease-out;
   -webkit-transform: translate3d(0, -25%, 0);
   -o-transform: translate3d(0, -25%, 0);
   transform: translate3d(0, -25%, 0);
@@ -5781,7 +5781,7 @@ button.close {
 .modal-footer .btn-group .btn + .btn {
   margin-left: -1px;
 }
-.modal-footer .btn-block + .btn-block {
+.pill-content > .pill-pane .modal-footer .btn-block + .btn-block {
   margin-left: 0;
 }
 .modal-scrollbar-measure {

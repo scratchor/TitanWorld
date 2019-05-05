@@ -359,8 +359,8 @@
               </button>
               <h4 class="modal-title" id="myModalLabel1">модаль 1</h4>
             </div>
-            <div class="modal-body">
-              <div class="flexslider">
+            <div class="modal-body modal_body1">
+              <div class="flexslider modal1">
                 <ul class="slides">
                   <li>
                     <img
@@ -414,19 +414,31 @@
               <h4 class="modal-title" id="myModalLabel2">модаль 2</h4>
             </div>
             <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-default"
-                data-dismiss="modal"
-              >
-                Закрыть
-              </button>
-              <button type="button" class="btn btn-primary">
-                Сохранить изменения
-              </button>
+              <div class="flexslider">
+                <ul class="slides">
+                  <li>
+                    <img
+                      src="img/slider1.jpg"
+                      class="img-responsive img_home_slider"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="img/slider2.jpg"
+                      class="img-responsive img_home_slider"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="img/slider33.jpg"
+                      class="img-responsive img_home_slider"
+                      alt=""
+                    />
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -926,10 +938,33 @@
     <!-- Custom JavaScript -->
     <script src="js/custom.js"></script>
     <script>
-      $("#myModal1").on("shown.bs.modal", function(e) {
-        console.log("куку");
-        $(".flexslider").flexslider();
-        $(window).trigger("resize");
+      const arr1 = ["#myModal1", "#myModal2", "#myModal3", "#myModal4"];
+      const arr2 = ["myModal1", "myModal2", "myModal3", "myModal4"];
+      $(document).ready(function() {
+        /*        $("#myModal1").on("shown.bs.modal", function(e) {
+          console.log("куку");
+          $(window).trigger("resize");
+          document.getElementById("myModal1").style.transition =
+            "opacity 0.3s linear";
+        });
+        $("#myModal1").on("hidden.bs.modal", function(e) {
+          document.querySelector(".modal-dialog").style.transition =
+            "transform 0.3s ease-out";
+          console.log("hidden");
+        });*/
+        arr1.forEach(function(e, i) {
+          $(e).on("shown.bs.modal", function(e) {
+            console.log(e, i);
+            $(window).trigger("resize");
+            document.getElementById(arr2[i]).style.transition =
+              "opacity 0.3s linear";
+          });
+          $(e).on("hidden.bs.modal", function() {
+            document.querySelector(".modal-dialog").style.transition =
+              "transform 0.3s ease-out";
+            console.log("hidden");
+          });
+        });
       });
     </script>
   </body>
