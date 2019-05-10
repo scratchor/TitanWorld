@@ -3175,9 +3175,9 @@ input[type="button"].btn-block {
 }
 .fade {
   opacity: 0;
-  -webkit-transition: opacity 0.65s linear;
-  -o-transition: opacity 0.65s linear;
-  transition: opacity 0.65s linear;
+  -webkit-transition: opacity 0.8s linear;
+  -o-transition: opacity 0.8s linear;
+  transition: opacity 0.8s linear;
 }
 .fade.in {
   opacity: 1;
@@ -5704,7 +5704,7 @@ button.close {
 .modal.fade .modal-dialog {
   -webkit-transition: -webkit-transform 0.8s ease-out;
   -o-transition: -o-transform 0.8s ease-out;
-  transition: transform 0.8s ease-out;
+  transition: transform 1s ease-out;
   -webkit-transform: translate3d(0, -25%, 0);
   -o-transform: translate3d(0, -25%, 0);
   transform: translate3d(0, -25%, 0);
@@ -5801,6 +5801,7 @@ button.close {
   .modal-content {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    background-color: #25d9ff;
   }
   .modal-sm {
     width: 300px;

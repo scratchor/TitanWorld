@@ -637,7 +637,7 @@ Button
     margin-bottom: 2px;
   }
   .img_home_slider {
-    height: 725px;
+    height: auto;
   }
 
   .pricing-box ul {
@@ -655,6 +655,9 @@ Button
   }
   .portfolio_inner {
     height: 249px;
+  }
+  .img_home_slider {
+    height: auto;
   }
 }
 
