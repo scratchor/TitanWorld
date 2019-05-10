@@ -583,6 +583,7 @@ Button
   }
   .img_home_slider {
     height: auto;
+    margin: auto;
   }
 
   .our_team_first_wrapper {
@@ -601,6 +602,13 @@ Button
   }
   .modal {
     z-index: 99999;
+  }
+}
+
+@media (min-width: 380px) {
+  .img_home_slider_long {
+    height: 85vh;
+    margin: auto;
   }
 }
 
@@ -635,6 +643,10 @@ Button
   .pricing-box ul {
     height: 120px;
   }
+
+  .img_home_slider_wide {
+    height: 85vh;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -654,10 +666,13 @@ Button
     height: 249px;
   }
   .img_home_slider {
-    height: 900px;
+    height: auto;
   }
   .team-foto {
     width: 1400px;
+  }
+  .img_home_slider_wide {
+    height: 85vh;
   }
 }
 
@@ -673,5 +688,8 @@ Button
   }
   .team-foto {
     width: 1400px;
+  }
+  .img_home_slider_wide {
+    height: 85vh;
   }
 }
