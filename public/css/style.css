@@ -286,7 +286,7 @@ ul.client-list li {
   padding: 0;
   list-style: none;
   text-align: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 ul.client-list li.bottom-list {
@@ -296,7 +296,7 @@ ul.client-list li.bottom-list {
 ul.client-list li ul li {
   width: 25%;
   border-bottom: none;
-  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
   padding: 45px 0 45px 0;
 }
 
@@ -350,11 +350,44 @@ ul.client-list li ul li.last {
 .fab {
   box-sizing: border-box;
   margin: 50px 5% 0;
+  color: rgba(0, 0, 0, 0.9);
 }
 
 .fab_wrapper {
   text-align: center;
   margin: 40px auto 0;
+}
+
+.color-client {
+  display: block;
+  position: relative;
+}
+
+.color-client::after {
+  content: "";
+  background-color: #e3333e;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 75%;
+  position: absolute;
+  z-index: -1;
+}
+
+.color-bg-client {
+  background-image: url(../img/pattern.png);
+  background-position: 0 0;
+  background-repeat: repeat;
+  color: #fff;
+}
+
+.client-red-line {
+  margin-top: 60px;
+  padding: 20px 0;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  left: 0;
 }
 
 /*
@@ -933,6 +966,10 @@ Heading
   background-image: url(../img/heading-line-white.png);
 }
 
+.white-line {
+  background-image: url(../img/heading-line-white.png);
+}
+
 .heading h1,
 .heading h2,
 .heading h3,
@@ -1434,7 +1471,7 @@ Custom responsive
   ul.client-list li ul li.last {
     float: left;
     width: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
     padding: 45px 0 45px 0;
     margin: 0;
     margin-bottom: 20px;
@@ -1459,13 +1496,16 @@ Custom responsive
     margin: 0 2% 20px 2%;
     list-style: none;
   }
+  .color-client::after {
+    bottom: 90%;
+  }
 }
 @media only screen and (min-width: 650px) and (max-width: 992px) {
   ul.client-list li ul li,
   ul.client-list li ul li.last {
     float: left;
     width: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
     padding: 45px 0 45px 0;
     margin: 0;
     margin-bottom: 20px;
@@ -1474,16 +1514,13 @@ Custom responsive
     border: 0;
   }
 
-  /*@media only screen and (min-width: 992px) {
-  ul.client-list li ul li,
-  ul.client-list li ul li.last {
-    float: left;
-    width: 25%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    padding: 45px 0 45px 0;
-    margin: 0;
-    margin-bottom: 20px;
-  }*/
+  .color-client::after {
+    bottom: 83.6%;
+  }
+
+  .fab_wrapper {
+    margin: 34px auto 0;
+  }
 }
 
 /*
