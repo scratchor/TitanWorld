@@ -131,14 +131,12 @@ html[xmlns] .slides {
   transition: all 0.3s ease-in-out;
 }
 .flex-direction-nav .flex-next {
-  background: url(../img/bg_direction_nav_next_black.png) no-repeat center
-    center;
+  background: url(../img/bg_direction_nav_next.png) no-repeat center center;
   right: 0;
   opacity: 0.4;
 }
 .flex-direction-nav .flex-prev {
-  background: url(../img/bg_direction_nav_prev_black.png) no-repeat center
-    center;
+  background: url(../img/bg_direction_nav_prev.png) no-repeat center center;
   left: 0;
   opacity: 0.4;
 }

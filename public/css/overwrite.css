@@ -584,6 +584,7 @@ Button
   .img_home_slider {
     height: auto;
     margin: auto;
+    max-height: 85vh;
   }
 
   .our_team_first_wrapper {
@@ -645,7 +646,7 @@ Button
   }
 
   .img_home_slider_wide {
-    height: 85vh;
+    height: auto;
   }
 }
 
